@@ -1,8 +1,8 @@
 {
-  "name": "sid-gel-website",
+  "name": "barelyhuman-dev-website",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/barelyhuman/sid-gel-website.git",
+  "repository": "https://github.com/barelyhuman/barelyhuman-dev-website.git",
   "author": "Siddharth Gelera <sidgroks@gmail.com>",
   "license": "MIT",
   "scripts": {
