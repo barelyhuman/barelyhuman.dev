@@ -129,6 +129,10 @@ export default function Layout(props) {
             font-size: 30px;
           }
 
+          .font-size-17 {
+            font-size: 17px;
+          }
+
           .font-size-15 {
             font-size: 15px;
           }
@@ -237,6 +241,26 @@ export default function Layout(props) {
 
           .accent {
             color: #50a586;
+          }
+
+          .width-50 {
+            width: 50%;
+          }
+
+          .flex {
+            display: flex;
+          }
+
+          .flex-col {
+            flex-direction: column;
+          }
+
+          .h-center {
+            justify-content: center;
+          }
+
+          .v-center {
+            align-items: center;
           }
         `}
       </style>
