@@ -6,16 +6,14 @@ function Index() {
       <div className="container">
         <div className="margin-md flex flex-col v-center">
           <a href="/" className="action-link">
+          <img src="static/code.svg" className="center-align" height="128" alt=""/>
             <span className="dark-gray font-size-50 text-center flex just-center">
               BarelyHuman
             </span>
           </a>
           <div className="tagline margin-md width-50">
             <p className="font-size-17">
-              A small Tech Studio that aims on building 3rd Party Apps and
-              Developer tools. Most of our offerings will be open sourced as{' '}
-              <span class="accent">Barely Human</span> is not for profit but for
-              the passion of developers that love coding.
+            A Philanthropic Venture Run by and for People Who Love to Code. Explore This Space for Third Party Apps & Developer Tools!
             </p>
           </div>
         </div>
@@ -29,6 +27,18 @@ function Index() {
             />
           </a>
         </div>
+
+      <style jsx global>
+    {
+      `
+      .center-align{
+        display:block;
+        margin:0 auto;
+      }
+      `
+    }
+      </style>
+
       </div>
     </Layout>
   );
