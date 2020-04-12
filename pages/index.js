@@ -6,7 +6,7 @@ function Index() {
       <div className="container">
         <div className="margin-md flex flex-col v-center">
           <a href="/" className="action-link">
-          <img src="static/code.svg" className="center-align" height="128" alt=""/>
+          <img src="/logo-light.png" className="margin-bottom-md center-align" height="100" alt=""/>
             <span className="dark-gray font-size-50 text-center flex just-center">
               BarelyHuman
             </span>
