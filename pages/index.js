@@ -4,12 +4,6 @@ import Head from 'next/head';
 function Index() {
   return (
     <Layout>
-    <Head>
-      <title>
-        BarelyHuman Dev Studio
-      </title>
-      <link rel="shortcut-icon" href="/favicon.ico"/>
-    </Head>
       <div className="container">
         <div className="margin-md flex flex-col v-center">
           <a href="/" className="action-link">
