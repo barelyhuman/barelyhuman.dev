@@ -1,5 +1,5 @@
-import Layout from '../components/Layout';
-import Head from 'next/head';
+import Layout from "../components/Layout";
+import Head from "next/head";
 
 function Index() {
   return (
@@ -7,16 +7,33 @@ function Index() {
       <div className="container">
         <div className="margin-md flex flex-col v-center">
           <a href="/" className="action-link">
-          <img src="/logo.png" className="margin-bottom-md center-align" height="100" alt=""/>
+            <img
+              src="/logo.png"
+              className="margin-bottom-md center-align"
+              height="100"
+              alt=""
+            />
             <span className="dark-gray font-size-50 text-center flex just-center">
               BarelyHuman
             </span>
           </a>
           <div className="tagline margin-md width-50">
             <p className="font-size-17">
-            A Philanthropic Venture Run by and for People Who Love to Code. Explore This Space for Third Party Apps & Developer Tools!
+              BarelyHuman is just an alter ego of{" "}
+              <a className="accent action-link" href="https://reaper.im">
+                Siddharth Gelera
+              </a>
+              , who is working for a company.I on the other hand work on
+              products and tools both for the community and him.
             </p>
           </div>
+        </div>
+        <div>
+          <a className="accent action-link" href="https://reaper.im/work">
+            Work
+          </a>
+          <br></br>
+          <br></br>
         </div>
         <div className="social-links flex just-center">
           <a href="https://github.com/barelyhuman">
@@ -29,17 +46,14 @@ function Index() {
           </a>
         </div>
 
-      <style jsx global>
-    {
-      `
-      .center-align{
-        display:block;
-        margin:0 auto;
-      }
-      `
-    }
-      </style>
-
+        <style jsx global>
+          {`
+            .center-align {
+              display: block;
+              margin: 0 auto;
+            }
+          `}
+        </style>
       </div>
     </Layout>
   );
