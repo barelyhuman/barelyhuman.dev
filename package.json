@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "repository": "https://github.com/barelyhuman/barelyhuman-dev-website.git",
-  "author": "Siddharth Gelera <sidgroks@gmail.com>",
+  "author": "Reaper <sidgroks@gmail.com>",
   "license": "MIT",
   "scripts": {
     "dev": "next",

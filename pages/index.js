@@ -21,7 +21,7 @@ function Index() {
             <p className="font-size-17">
               BarelyHuman is just an alter ego of{" "}
               <a className="accent action-link" href="https://reaper.im">
-                Siddharth Gelera
+                Reaper
               </a>
               , who is working for a company.I on the other hand work on
               products and tools both for the community and him.
