@@ -23,7 +23,7 @@ function Index() {
               <a className="accent action-link" href="https://reaper.im">
                 Reaper
               </a>
-              , who is working for a company.I on the other hand work on
+              , who is working for a company. I on the other hand work on
               products and tools both for the community and him.
             </p>
           </div>
