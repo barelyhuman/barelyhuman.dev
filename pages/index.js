@@ -1,5 +1,5 @@
-import Layout from "../components/Layout";
-import Head from "next/head";
+import Layout from '../components/Layout';
+import Head from 'next/head';
 
 function Index() {
   return (
@@ -19,7 +19,7 @@ function Index() {
           </a>
           <div className="tagline margin-md width-50">
             <p className="font-size-17">
-              BarelyHuman is just an alter ego of{" "}
+              BarelyHuman is an alter ego of{' '}
               <a className="accent action-link" href="https://reaper.im">
                 Reaper
               </a>
