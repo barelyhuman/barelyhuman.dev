@@ -4,11 +4,6 @@ import Head from 'next/head';
 function Index() {
   return (
     <>
-      <Head>
-        <a rel="me" href="https://fosstodon.org/@reaper">
-          Mastodon
-        </a>
-      </Head>
       <Layout>
         <div className="container">
           <div className="margin-md flex flex-col v-center">
@@ -38,6 +33,9 @@ function Index() {
             <a className="accent action-link" href="https://reaper.im/work">
               Work
             </a>
+            <a className="margin-sm accent action-link" rel="me" href="https://fosstodon.org/@reaper">
+          Mastodon
+        </a>
             <br></br>
             <br></br>
           </div>
