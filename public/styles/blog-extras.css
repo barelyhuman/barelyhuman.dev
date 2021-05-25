@@ -1,0 +1,26 @@
+.task-item {
+  margin: 0px;
+  margin-right: 8px;
+  vertical-align: bottom;
+}
+
+a{
+  text-underline-offset:4px;
+}
+
+pre {
+  overflow: auto;
+  padding: 8px;
+  background: var(--bg-lighter);
+  border-radius: 4px;
+}
+
+img {
+  max-width: 100%;
+  border: 2px solid black;
+  border-radius: 4px;
+}
+
+code {
+  color: var(--fg-lighter);
+}

@@ -1,0 +1,19 @@
+site:
+  name: BarelyHuman
+  link: https://barelyhuman.dev
+  description: Indie Developer
+
+template_names:
+  post_template: "blogPostHTML"
+  post_index_template: "blogIndexHTML"
+  page_template: "simplePageHTML"
+  rss_template: "rssTemplate"
+
+content_path: "./contents"
+templates_path: "./templates"
+out_path: "./out"
+public_folder: "./public"
+generate_rss: true
+rss_out_path: "./out/blog.xml"
+indexed_folders:
+  - devlogs

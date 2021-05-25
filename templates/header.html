@@ -1,0 +1,18 @@
+{{define "headerHTML"}}
+<header class="container-boundaries">
+  <div class="flex">
+    <div>
+      <h3 class="">
+        {{.Site.Name}}
+        <br />
+        <small class="fw-normal no-wrap"
+          >{{.Site.Description}}</small
+        >
+      </h3>
+      <a href="/" class="mr-2 mb-2">Home</a>
+      <a href="/devlogs/index.html" class="mr-2 mb-2">Dev Logs</a>
+      <a href="/projects.html" class="mr-2 mb-2">Projects</a>
+    </div>
+  </div>
+</header>
+{{end}}

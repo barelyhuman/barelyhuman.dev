@@ -1,0 +1,39 @@
+.list-style-none{
+    list-style-type: none;
+}
+
+a{
+    text-underline-offset:4px;
+}
+
+.logo-holder{
+    background-image: url("/assets/dark-logo.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height:74px;
+    width:74px;
+    object-fit: contain;
+}
+
+.only-light{
+    display: block;
+}
+
+.only-dark{
+    display: none;
+}
+
+@media (prefers-color-scheme: dark) {
+    .logo-holder{
+        background-image: url("/assets/light-logo.png");
+    }   
+
+    .only-dark{
+        display: block;
+    }
+
+    .only-light{
+        display: none;
+    }
+}

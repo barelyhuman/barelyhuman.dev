@@ -2,13 +2,13 @@
 
 :root {
   --white: #fff;
-  --accent: #4064f2;
   --bg: #fff;
-  --bg-light: #e5e9f0;
-  --bg-lighter: #d8dee9;
-  --fg: #2e3440;
-  --fg-light: #3b4252;
-  --fg-lighter: #434c5e;
+  --bg-light: #eee;
+  --bg-lighter: #ddd;
+  --fg: #111;
+  --fg-light: #333;
+  --fg-lighter: #454545;
+  --accent: var(--fg);
   --shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
 }
 
@@ -16,19 +16,9 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Nanum Gothic', -apple-system, BlinkMacSystemFont, Segoe UI,
+  font-family: "Nanum Gothic", -apple-system, BlinkMacSystemFont, Segoe UI,
     Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
     sans-serif;
-}
-
-body[data-dark-mode='dark'] {
-  --bg: #121212;
-  --bg-light: #191919;
-  --bg-lighter: #252525;
-  --fg: #d8dee9;
-  --fg-light: #e5e9f0;
-  --fg-lighter: #eceff4;
-  --shadow: rgb(15 17 21 / 20%) 0px 3px 6px 0px;
 }
 
 body {
@@ -36,10 +26,7 @@ body {
   color: var(--fg);
 }
 
-a {
-  color: #4064f2;
-  text-decoration: none;
-}
+
 
 * {
   box-sizing: border-box;
@@ -50,7 +37,8 @@ body {
   color: var(--fg);
 }
 
-button {
+button,
+.button {
   background: var(--bg);
   color: var(--fg);
   border: 2px solid var(--fg);
@@ -61,9 +49,11 @@ button {
   justify-content: center;
   align-items: center;
   outline: var(--fg);
+  min-width: 150px;
   transition: all 0.2s ease;
 }
 
+.button:hover,
 button:hover {
   border-color: var(--fg);
   outline: #000;
@@ -83,17 +73,22 @@ input {
   justify-content: center;
   align-items: center;
   transition: all 0.2s ease;
-  box-shadow: var(--shadow);
   outline: #fff;
   border-radius: 8px;
 }
 
-a {
-  color: var(--accent);
-  text-decoration: none;
+input[type="text"],
+input[type="password"] {
+  box-shadow: var(--shadow);
 }
 
-p {
+a {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
+p,
+li {
   font-size: 16px;
   line-height: 30px;
 }
@@ -105,30 +100,36 @@ footer {
 
 /* Dark Mode Resets */
 
-body[data-dark-mode] button:hover {
+body[data-dark-mode="dark"] .button:hover,
+body[data-dark-mode="dark"] button:hover {
   background: var(--fg);
   color: var(--bg);
 }
 
-body[data-dark-mode] input {
+body[data-dark-mode="dark"] input {
   background: #191919;
   color: var(--fg);
 }
 
 /* Classes */
 
+.button.no-border,
 button.no-border {
   border: 0;
 }
 
+.button.secondary,
 button.secondary {
+  border: 0px;
   background: var(--bg-light);
 }
 
+.button.secondary:hover,
 button.secondary:hover {
   background: var(--fg);
 }
 
+.button.icon,
 button.icon {
   height: 32px;
   width: 32px;
@@ -167,6 +168,14 @@ input.large {
   width: 100%;
 }
 
+.h-50 {
+  height: 50%;
+}
+
+.h-100 {
+  height: 100%;
+}
+
 .flex {
   display: flex;
 }
@@ -178,6 +187,14 @@ input.large {
 
 .justify-end {
   justify-content: flex-end;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
 }
 
 .m-0 {
@@ -248,6 +265,18 @@ input.large {
   padding-bottom: 16px;
 }
 
+.f-small {
+  font-size: 14px;
+}
+
+.f-normal {
+  font-size: 16px;
+}
+
+.f-large {
+  font-size: 36px;
+}
+
 .fw-normal {
   font-weight: 400;
 }
@@ -262,4 +291,47 @@ input.large {
 
 .no-wrap {
   white-space: nowrap;
+}
+
+.f-right {
+  float: right;
+}
+
+.f-left {
+  float: left;
+}
+
+.rounded-sm {
+  border-radius: 4px;
+}
+
+.rounded-md {
+  border-radius: 8px;
+}
+
+.rounded-circle {
+  border-radius: 50%;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #111;
+    --bg-light: #333;
+    --bg-lighter: #454545;
+    --fg: #fff;
+    --fg-light: #eee;
+    --fg-lighter: #ddd;
+    --shadow: rgb(15 17 21 / 20%) 0px 3px 6px 0px;
+  }
+
+  .button:hover,
+  button:hover {
+    background: var(--fg);
+    color: var(--bg);
+  }
+
+  input {
+    background: #191919;
+    color: var(--fg);
+  }
 }
