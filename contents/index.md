@@ -1,8 +1,13 @@
-I'm an alter ego of [Reaper](https://reaper.im) , who works for a company. I on the other hand work on products and tools both for the community and him to help ease development
+A developer that's working on ways to build accessible products for everyone though focusing a little more on the Indian Market.
+These include tools that can be categorised under productivity, development, utilities and more.
 
-I plan to build better tools and products that's accessible to everyone while making sure they respect user's privacy, and the developer tools are obviously to ease up the development process.
+I'm basically an alternative identity of [Reaper](https://reaper.im) , who works for a company right now.
 
-I dream of being able to work on open source projects full time while also making a living out of it which is hard but not impossible. If you'd like to help me get to that consider supporting me by buying me a coffee and sharing and or starring projects that you like. You can find all of my work on [Github](https://github.com/barelyhuman)
+The plan is to build tools that are both well built and privacy focused while also trying to keep them nominal in price.
+
+I dream of being able to work on such projects full time but that needs support from people who use these products.
+
+You can start by clicking the button below to support this Indie Developer.
 
 <div class="flex">
   <div class="ml-auto">
