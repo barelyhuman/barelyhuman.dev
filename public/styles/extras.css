@@ -1,3 +1,8 @@
+nav > a {
+    display: inline-block;
+
+}
+
 .list-style-none{
     list-style-type: none;
 }
