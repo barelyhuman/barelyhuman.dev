@@ -17,4 +17,4 @@ generate_rss: true
 rss_out_path: "./out/blog.xml"
 indexed_folders:
   - devlogs
-  - newsletter
+  - blog
