@@ -26,8 +26,6 @@ body {
   color: var(--fg);
 }
 
-
-
 * {
   box-sizing: border-box;
 }
@@ -311,6 +309,16 @@ input.large {
 
 .rounded-circle {
   border-radius: 50%;
+}
+
+.icon svg {
+  height: 16px;
+  width: 16px;
+  transition: 230ms color ease;
+}
+
+.icon:hover svg {
+  color: var(--bg-lighter);
 }
 
 @media (prefers-color-scheme: dark) {
