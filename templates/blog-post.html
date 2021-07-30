@@ -7,21 +7,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" href="/assets/favicon.png" />
     <meta property="og:type" content="website" />
-    <meta
-      property="og:url"
-      content='{{print .Site.Link "/" .Meta.Slug}}'
-    />
+    <meta property="og:url" content='{{print .Site.Link "/" .Meta.Slug}}' />
     <meta property="og:title" content="{{.Meta.Title}}" />
-    <meta property="og:image" content="{{.Site.Link}}/assets/logo.png" />
+    <meta
+      property="og:image"
+      content="{{or .Meta.ImageURL .Meta.AGImageURL}}"
+    />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
-    <meta
-      property="twitter:url"
-      content='{{print .Site.Name .Meta.Slug}}'
-    />
+    <meta property="twitter:url" content="{{print .Site.Name .Meta.Slug}}" />
     <meta property="twitter:title" content="{{.Meta.Title}}" />
-    <meta property="twitter:image" content="{{.Site.Link}}/assets/logo.png" />
+    <meta
+      property="twitter:image"
+      content="{{or .Meta.ImageURL .Meta.AGImageURL}}"
+    />
     <meta name="title" content="{{.Meta.Title}}" />
     <title>{{.Meta.Title}}</title>
     <link rel="stylesheet" href="../styles/main.css" />
