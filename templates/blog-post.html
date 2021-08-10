@@ -34,6 +34,18 @@
         <h1>{{.Meta.Title}}</h1>
       </article>
       {{.Content}}
+      <section>
+        <div class="mt-2 container-boundaries">
+          <hr />
+          You can also subscribe to my
+          <span>
+            <a href="https://reaper.im/newsletter.html">Newsletter</a>
+          </span>
+          or
+          <span><a href="/blog.xml">RSS</a></span>
+          if you'd like to receive such posts in your inbox.
+        </div>
+      </section>
     </main>
     {{template "footerHTML" .}}
   </body>
