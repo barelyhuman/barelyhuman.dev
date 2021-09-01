@@ -1,11 +1,13 @@
+@import url("cdn.jsdelivr.net/npm/hack-font@3/build/web/hack.css");
+
 .task-item {
   margin: 0px;
   margin-right: 8px;
   vertical-align: bottom;
 }
 
-a{
-  text-underline-offset:4px;
+a {
+  text-underline-offset: 4px;
 }
 
 pre {
@@ -13,6 +15,7 @@ pre {
   padding: 8px;
   background: var(--bg-lighter);
   border-radius: 4px;
+  font-family: "Hack", monospace;
 }
 
 img {
