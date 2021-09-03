@@ -2,7 +2,6 @@
 title: Announcing Taco
 published: true
 date: 01/06/2021
-
 ---
 
 Nope, I didn't forget about the announcement , nor was I busy doing something else. I wanted it to be a release at night so I can sleep and wake up and not worry about it all day or obsessively checking my email for feedback.

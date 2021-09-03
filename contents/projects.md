@@ -2,7 +2,7 @@
 
 ### [TillWhen](https://tillwhen.barelyhuman.dev/)
 
-A simple timetracker for project based time logging, this was my first experiment as an indie developer to test if the market would accept such simplistic tools. Much to my surprise it has had a few active users for the past year 
+A simple timetracker for project based time logging, this was my first experiment as an indie developer to test if the market would accept such simplistic tools. Much to my surprise it has had a few active users for the past year
 
 ### [Taco (WIP)](https://taco.barelyhuman.dev/)
 
