@@ -2,6 +2,7 @@
 title: devlog[6]
 published: true
 date: 13/09/2021
+image_url: https://og.reaper.im/api?fontSize=16&title=devlog+%5B6%5D&subtitle=BarelyHuman.dev&fontSizeTwo=6&color=%23000
 ---
 
 Let's see, did I even do something the past week?
