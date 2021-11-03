@@ -2,17 +2,17 @@
 
 @import url("https://unpkg.com/inter-ui@3.19.3/inter.css");
 
-:root {
-  --white: #fff;
-  --bg: #FDFBF9;
-  --bg-light: #E6CDB4;
-  --bg-lighter: #D9B48E;
-  --fg: #171717;
-  --fg-light: #333333;
-  --fg-lighter: #4D4D4D;
-  --accent: var(--fg);
-  --shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
-}
+ :root {
+    --bg: #171717;
+    --bg-light: #333;
+    --bg-lighter: #4D4D4D;
+    --fg: #FDFBF9;
+    --fg-light: #E6CDB4;
+    --fg-lighter: #D9B48E;
+    --shadow: rgb(15 17 21 / 20%) 0px 3px 6px 0px;
+  }
+
+
 
 html,
 body {
@@ -325,17 +325,6 @@ input.large {
   color: var(--bg-lighter);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #171717;
-    --bg-light: #333;
-    --bg-lighter: #4D4D4D;
-    --fg: #FDFBF9;
-    --fg-light: #E6CDB4;
-    --fg-lighter: #D9B48E;
-    --shadow: rgb(15 17 21 / 20%) 0px 3px 6px 0px;
-  }
-
   .button:hover,
   button:hover {
     background: var(--fg);
@@ -346,4 +335,4 @@ input.large {
     background: #191919;
     color: var(--fg);
   }
-}
+
