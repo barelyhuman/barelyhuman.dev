@@ -4,12 +4,12 @@
 
 :root {
   --white: #fff;
-  --bg: #fff;
-  --bg-light: #eee;
-  --bg-lighter: #ddd;
-  --fg: #111;
-  --fg-light: #333;
-  --fg-lighter: #454545;
+  --bg: #FDFBF9;
+  --bg-light: #E6CDB4;
+  --bg-lighter: #D9B48E;
+  --fg: #171717;
+  --fg-light: #333333;
+  --fg-lighter: #4D4D4D;
   --accent: var(--fg);
   --shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
 }
@@ -327,12 +327,12 @@ input.large {
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg: #111;
+    --bg: #171717;
     --bg-light: #333;
-    --bg-lighter: #454545;
-    --fg: #fff;
-    --fg-light: #eee;
-    --fg-lighter: #ddd;
+    --bg-lighter: #4D4D4D;
+    --fg: #FDFBF9;
+    --fg-light: #E6CDB4;
+    --fg-lighter: #D9B48E;
     --shadow: rgb(15 17 21 / 20%) 0px 3px 6px 0px;
   }
 
