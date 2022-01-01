@@ -1,18 +1,29 @@
 /* Resets */
 
 @import url("https://unpkg.com/inter-ui@3.19.3/inter.css");
+@import url("https://unpkg.com/@barelyhuman/rose-pine-css@0.0.2/rose-pine.css");
 
- :root {
-    --bg: #171717;
-    --bg-light: #333;
-    --bg-lighter: #4D4D4D;
-    --fg: #FDFBF9;
-    --fg-light: #E6CDB4;
-    --fg-lighter: #D9B48E;
+:root {
+  --bg: var(--rose-dawn-base);
+  --bg-light: var(--rose-dawn-surface);
+  --bg-lighter: var(--rose-dawn-overlay);
+  --fg: var(--rose-dawn-text);
+  --fg-light: var(--rose-dawn-subtle);
+  --fg-lighter: var(--rose-dawn-inactive);
+  --shadow: rgb(15 17 21 / 20%) 0px 3px 6px 0px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: var(--rose-dark-base);
+    --bg-light: var(--rose-dark-surface);
+    --bg-lighter: var(--rose-dark-overlay);
+    --fg: var(--rose-dark-text);
+    --fg-light: var(--rose-dark-subtle);
+    --fg-lighter: var(--rose-dark-inactive);
     --shadow: rgb(15 17 21 / 20%) 0px 3px 6px 0px;
   }
-
-
+}
 
 html,
 body {
@@ -325,14 +336,13 @@ input.large {
   color: var(--bg-lighter);
 }
 
-  .button:hover,
-  button:hover {
-    background: var(--fg);
-    color: var(--bg);
-  }
+.button:hover,
+button:hover {
+  background: var(--fg);
+  color: var(--bg);
+}
 
-  input {
-    background: #191919;
-    color: var(--fg);
-  }
-
+input {
+  background: #191919;
+  color: var(--fg);
+}
