@@ -1,7 +1,7 @@
 /* Resets */
 
 @import url("https://unpkg.com/inter-ui@3.19.3/inter.css");
-@import url("https://unpkg.com/@barelyhuman/rose-pine-css@0.0.2/rose-pine.css");
+@import url("https://unpkg.com/@barelyhuman/rose-pine-css@0.0.4-2/rose-pine.min.css");
 
 :root {
   --bg: var(--rose-dawn-base);
@@ -15,12 +15,12 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg: var(--rose-dark-base);
-    --bg-light: var(--rose-dark-surface);
-    --bg-lighter: var(--rose-dark-overlay);
-    --fg: var(--rose-dark-text);
-    --fg-light: var(--rose-dark-subtle);
-    --fg-lighter: var(--rose-dark-inactive);
+    --bg: var(--rose-main-base);
+    --bg-light: var(--rose-main-surface);
+    --bg-lighter: var(--rose-main-overlay);
+    --fg: var(--rose-main-text);
+    --fg-light: var(--rose-main-subtle);
+    --fg-lighter: var(--rose-main-inactive);
     --shadow: rgb(15 17 21 / 20%) 0px 3px 6px 0px;
   }
 }
