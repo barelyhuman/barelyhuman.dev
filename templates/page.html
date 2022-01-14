@@ -7,13 +7,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="icon" type="image/png" href="/assets/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{{.Site.Name}} | {{.Meta.Title}}</title>
     <link rel="stylesheet" href="../styles/main.css" />
     <link rel="stylesheet" href="../styles/extras.css" />
   </head>
   <body>
     {{template "headerHTML" .}}
-    <main class="container-boundaries container">{{.Content}}</main>
+    <main class="container-boundaries container">
+      <article>
+        {{if .Meta.title}}
+        <h1>{{.Meta.title}}</h1>
+        {{end}} {{.Content}}
+      </article>
+    </main>
     {{template "footerHTML" .}}
   </body>
 </html>

@@ -4,6 +4,20 @@
 <meta name="title" content="{{.Site.Name}}" />
 <meta name="description" content="{{.Site.Description}}" />
 
+{{if .Meta}}
+<meta property="og:url" content='{{print .Site.Link "/" .Meta.slug}}' />
+<meta property="og:title" content="{{.Meta.title}}" />
+<meta property="og:image" content="{{or .Meta.image_url}}" />
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content="{{print .Site.Name .Meta.slug}}" />
+<meta property="twitter:title" content="{{.Meta.title}}" />
+<meta
+  property="twitter:image"
+  content="{{or .Meta.ImageURL .Meta.AGImageURL}}"
+/>
+<meta name="title" content="{{.Meta.title}}" />
+{{else}}
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website" />
 <meta property="og:url" content="{{.Site.Link}}" />
@@ -21,4 +35,4 @@
 I develop open source software and tools to ease development and life overall. Dreams of making a living off of open source software."
 />
 <meta property="twitter:image" content="{{.Site.Link}}/assets/logo.png" />
-{{end}}
+{{end}} {{end}}

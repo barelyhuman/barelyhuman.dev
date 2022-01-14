@@ -17,9 +17,9 @@
       <ul class="p-0">
         {{range .Files}}
         <li class="mb-2 list-style-none">
-          <a href="/{{.Slug}}"> {{.Title}} </a>
+          <a href="/{{.slug}}"> {{.title}} </a>
           <p class="m-0 p-0">
-            <small> {{.Date.Format "02/01/2006"}} </small>
+            <small> {{.date}} </small>
           </p>
         </li>
         {{end}}
