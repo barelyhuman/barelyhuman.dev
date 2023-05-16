@@ -1,9 +1,20 @@
 lockfileVersion: '6.0'
 
+dependencies:
+  luxon:
+    specifier: ^3.3.0
+    version: 3.3.0
+
 devDependencies:
+  '@barelyhuman/prettier-config':
+    specifier: ^1.1.0
+    version: 1.1.0
   '@nuxt/content':
     specifier: ^2.6.0
     version: 2.6.0
+  '@nuxtjs/feed':
+    specifier: ^2.0.0
+    version: 2.0.0
   '@nuxtjs/tailwindcss':
     specifier: ^6.7.0
     version: 6.7.0(webpack@5.82.1)
@@ -13,6 +24,12 @@ devDependencies:
   nuxt:
     specifier: ^3.4.3
     version: 3.4.3(@types/node@18.15.12)
+  nuxt-module-feed:
+    specifier: ^1.0.3
+    version: 1.0.3
+  prettier:
+    specifier: ^2.8.8
+    version: 2.8.8
 
 packages:
 
@@ -329,6 +346,10 @@ packages:
       '@babel/helper-string-parser': 7.21.5
       '@babel/helper-validator-identifier': 7.19.1
       to-fast-properties: 2.0.0
+    dev: true
+
+  /@barelyhuman/prettier-config@1.1.0:
+    resolution: {integrity: sha512-OlommcxHffkX+BtAsXP1ipK0WzKgNha5a+T+reNlNZZkHPZzZrLpQ23snAbubN4xZiV73Z6E+To02ZZka0eTTQ==}
     dev: true
 
   /@cloudflare/kv-asset-handler@0.3.0:
@@ -731,6 +752,33 @@ packages:
     resolution: {integrity: sha512-GBzP8zOc7CGWyFQS6dv1lQz8VVpz5C2yRszbXufwG/9zhStTIH50EtD87NmWbTMwXDvZLNg8GIpb1UFdH93JCA==}
     dev: true
 
+  /@nuxt/kit@3.3.1:
+    resolution: {integrity: sha512-zb7/2FUIB1g7nl6K6qozUzfG5uu4yrs9TQjZvpASnPBZ/x1EuJX5k3AA71hMMIVBEX9Adxvh9AuhDEHE5W26Zg==}
+    engines: {node: ^14.18.0 || ^16.10.0 || ^17.0.0 || ^18.0.0 || ^19.0.0}
+    dependencies:
+      '@nuxt/schema': 3.3.1
+      c12: 1.4.1
+      consola: 2.15.3
+      defu: 6.1.2
+      globby: 13.1.4
+      hash-sum: 2.0.0
+      ignore: 5.2.4
+      jiti: 1.18.2
+      knitwork: 1.0.0
+      lodash.template: 4.5.0
+      mlly: 1.2.1
+      pathe: 1.1.0
+      pkg-types: 1.0.3
+      scule: 1.0.0
+      semver: 7.5.1
+      unctx: 2.3.0
+      unimport: 3.0.6(rollup@3.21.8)
+      untyped: 1.3.2
+    transitivePeerDependencies:
+      - rollup
+      - supports-color
+    dev: true
+
   /@nuxt/kit@3.4.1:
     resolution: {integrity: sha512-VeH26umZW6Rf4F1QX9nTIuTBp6HeL/MgmKY3+FgQiLD07afgFTLUJZohVE5xU7hb66zCnYvwKxa3JpjXFJZrhQ==}
     engines: {node: ^14.18.0 || ^16.10.0 || ^17.0.0 || ^18.0.0 || ^19.0.0}
@@ -798,6 +846,28 @@ packages:
       semver: 7.5.1
     transitivePeerDependencies:
       - webpack
+    dev: true
+
+  /@nuxt/schema@3.3.1:
+    resolution: {integrity: sha512-E8HWzU43rXzqwDTmWduTLHY4xIwRSAUt1LbpuE9IjZ4uJZq5Mbaj4nfhANNsTQGw2c+O+rL81yzAP3i61LEJDw==}
+    engines: {node: ^14.18.0 || ^16.10.0 || ^17.0.0 || ^18.0.0 || ^19.0.0}
+    dependencies:
+      c12: 1.4.1
+      create-require: 1.1.1
+      defu: 6.1.2
+      hookable: 5.5.3
+      jiti: 1.18.2
+      pathe: 1.1.0
+      pkg-types: 1.0.3
+      postcss-import-resolver: 2.0.0
+      scule: 1.0.0
+      std-env: 3.3.3
+      ufo: 1.1.2
+      unimport: 3.0.6(rollup@3.21.8)
+      untyped: 1.3.2
+    transitivePeerDependencies:
+      - rollup
+      - supports-color
     dev: true
 
   /@nuxt/schema@3.4.1:
@@ -931,6 +1001,14 @@ packages:
       - vls
       - vti
       - vue-tsc
+    dev: true
+
+  /@nuxtjs/feed@2.0.0:
+    resolution: {integrity: sha512-HUmvn/+Spd/8sthGJUPnny/Q5nMcvMBotlPxU0UD0f4UoMhSpBqLDFTSTruYDa5VeXKtS3qCkZLhnyqR5aiXTA==}
+    dependencies:
+      async-cache: 1.1.0
+      consola: 2.15.3
+      feed: 4.2.2
     dev: true
 
   /@nuxtjs/tailwindcss@6.7.0(webpack@5.82.1):
@@ -1635,6 +1713,13 @@ packages:
     resolution: {integrity: sha512-8+9WqebbFzpX9OR+Wa6O29asIogeRMzcGtAINdpMHHyAg10f05aSFVBbcEqGf/PXw1EjAZ+q2/bEBg3DvurK3Q==}
     dev: true
 
+  /async-cache@1.1.0:
+    resolution: {integrity: sha512-YDQc4vBn5NFhY6g6HhVshyi3Fy9+SQ5ePnE7JLDJn1DoL+i7ER+vMwtTNOYk9leZkYMnOwpBCWqyLDPw8Aig8g==}
+    deprecated: No longer maintained. Use [lru-cache](http://npm.im/lru-cache) version 7.6 or higher, and provide an asynchronous `fetchMethod` option.
+    dependencies:
+      lru-cache: 4.1.5
+    dev: true
+
   /async-sema@3.1.1:
     resolution: {integrity: sha512-tLRNUXati5MFePdAk8dw7Qt7DpxPB60ofAgn8WRhW6a2rcimZnYBP9oxHiv0OHy+Wz7kPMG+t4LGdt31+4EmGg==}
     dev: true
@@ -2046,6 +2131,10 @@ packages:
 
   /concat-map@0.0.1:
     resolution: {integrity: sha512-/Srv4dswyQNBfohGpz9o6Yb3Gz3SrUDqBH5rTuhGR7ahtlbYKnVxw2bCFMRljaA7EXHaXZ8wsHdodFvbkhKmqg==}
+    dev: true
+
+  /consola@2.15.3:
+    resolution: {integrity: sha512-9vAdYbHj6x2fLKC4+oPH0kFzY/orMZyG2Aj+kNylHxKGJ/Ed4dpNyAQYwJOdqO4zdM7XpVHmyejQDcQHrnuXbw==}
     dev: true
 
   /consola@3.1.0:
@@ -2713,6 +2802,13 @@ packages:
     resolution: {integrity: sha512-wBrocU2LCXXa+lWBt8RoIRD89Fi8OdABODa/kEnyeyjS5aZO5/GNvI5sEINADqP/h8M29UHTHUb53sUu5Ihqdw==}
     dependencies:
       reusify: 1.0.4
+    dev: true
+
+  /feed@4.2.2:
+    resolution: {integrity: sha512-u5/sxGfiMfZNtJ3OvQpXcvotFpYkL0n9u9mM2vkui2nGo8b4wvDkJ8gAkYqbA8QpGyFCv3RK0Z+Iv+9veCS9bQ==}
+    engines: {node: '>=0.4.0'}
+    dependencies:
+      xml-js: 1.6.11
     dev: true
 
   /fetch-blob@3.2.0:
@@ -3724,6 +3820,13 @@ packages:
     resolution: {integrity: sha512-9Ri+o0JYgehTaVBBDoMqIl8GXtbWg711O3srftcHhZ0dqnETqLaoIK0x17fUw9rFSlK/0NlsKe0Ahhyl5pXE2g==}
     dev: true
 
+  /lru-cache@4.1.5:
+    resolution: {integrity: sha512-sWZlbEP2OsHNkXrMl5GYk/jKk70MBng6UU4YI/qGDYbgf6YbP4EvmqISbXCoJiRKs+1bSpFHVgQxvJ17F2li5g==}
+    dependencies:
+      pseudomap: 1.0.2
+      yallist: 2.1.2
+    dev: true
+
   /lru-cache@5.1.1:
     resolution: {integrity: sha512-KpNARQA3Iwv+jTA0utUVVbrh+Jlrr1Fv0e56GGzAFOXN7dk/FviaDW8LHmK52DlcH4WP2n6gI8vN1aesBFgo9w==}
     dependencies:
@@ -3741,6 +3844,11 @@ packages:
     resolution: {integrity: sha512-65/Jky17UwSb0BuB9V+MyDpsOtXKmYwzhyl+cOa9XUiI4uV2Ouy/2voFP3+al0BjZbJgMBD8FojMpAf+Z+qn4A==}
     engines: {node: 14 || >=16.14}
     dev: true
+
+  /luxon@3.3.0:
+    resolution: {integrity: sha512-An0UCfG/rSiqtAIiBPO0Y9/zAnHUZxAMiCpTd5h2smgsj7GGmcenvrvww2cqNA8/4A5ZrD1gJpHN2mIHZQF+Mg==}
+    engines: {node: '>=12'}
+    dev: false
 
   /magic-string@0.27.0:
     resolution: {integrity: sha512-8UnnX2PeRAPZuN12svgR9j7M1uWMovg/CEnIwIG0LFkXSJJe4PdfUGiTGl8V9bsBHFUtfVINcSyYxd7q+kx9fA==}
@@ -4539,6 +4647,16 @@ packages:
     hasBin: true
     optionalDependencies:
       fsevents: 2.3.2
+    dev: true
+
+  /nuxt-module-feed@1.0.3:
+    resolution: {integrity: sha512-U5tFosSSg7iSAuZVXwtUlbhq2ZEnOpNskphRRTmsgAkyavahS3xU1oSxxQJUgexyLXG81QDf7+4QaAKfLwD7vg==}
+    dependencies:
+      '@nuxt/kit': 3.3.1
+      feed: 4.2.2
+    transitivePeerDependencies:
+      - rollup
+      - supports-color
     dev: true
 
   /nuxt@3.4.3(@types/node@18.15.12):
@@ -5345,6 +5463,12 @@ packages:
       source-map-js: 1.0.2
     dev: true
 
+  /prettier@2.8.8:
+    resolution: {integrity: sha512-tdN8qQGvNjw4CHbY+XXk0JgCXn9QiF21a55rBe5LJAU+kDyC4WQn4+awm2Xfk2lQMk5fKup9XgzTZtGkjBdP9Q==}
+    engines: {node: '>=10.13.0'}
+    hasBin: true
+    dev: true
+
   /pretty-bytes@6.1.0:
     resolution: {integrity: sha512-Rk753HI8f4uivXi4ZCIYdhmG1V+WKzvRMg/X+M42a6t7D07RcmopXJMDNk6N++7Bl75URRGsb40ruvg7Hcp2wQ==}
     engines: {node: ^14.13.1 || >=16.0.0}
@@ -5372,6 +5496,10 @@ packages:
 
   /prr@1.0.1:
     resolution: {integrity: sha512-yPw4Sng1gWghHQWj0B3ZggWUm4qVbPwPFcRG8KyxiU7J2OHFSoEHKS+EZ3fv5l1t9CyCiop6l/ZYeWbrgoQejw==}
+    dev: true
+
+  /pseudomap@1.0.2:
+    resolution: {integrity: sha512-b/YwNhb8lk1Zz2+bXXpS/LK9OisiZZ1SNsSLxN1x2OXVEhW2Ckr/7mWE5vrC1ZTiJlD9g19jWszTmJsB+oEpFQ==}
     dev: true
 
   /punycode@2.3.0:
@@ -5700,6 +5828,10 @@ packages:
 
   /safer-buffer@2.1.2:
     resolution: {integrity: sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==}
+    dev: true
+
+  /sax@1.2.4:
+    resolution: {integrity: sha512-NqVDv9TpANUjFm0N8uM5GxL36UgKi9/atZw+x7YFnQ8ckwFGKrl4xX4yWtrey3UJm5nP1kUbnYgLopqWNSRhWw==}
     dev: true
 
   /schema-utils@3.1.2:
@@ -6797,6 +6929,13 @@ packages:
         optional: true
     dev: true
 
+  /xml-js@1.6.11:
+    resolution: {integrity: sha512-7rVi2KMfwfWFl+GpPg6m80IVMWXLRjO+PxTq7V2CDhoGak0wzYzFgUY2m4XJ47OGdXd8eLE8EmwfAmdjw7lC1g==}
+    hasBin: true
+    dependencies:
+      sax: 1.2.4
+    dev: true
+
   /xmlhttprequest-ssl@2.0.0:
     resolution: {integrity: sha512-QKxVRxiRACQcVuQEYFsI1hhkrMlrXHPegbbd1yn9UHOmRxY+si12nQYzri3vbzt8VdTTRviqcKxcyllFas5z2A==}
     engines: {node: '>=0.4.0'}
@@ -6811,6 +6950,10 @@ packages:
   /y18n@5.0.8:
     resolution: {integrity: sha512-0pfFzegeDWJHJIAmTLRP2DwHjdF5s7jo9tuztdQxAhINCdvS+3nGINqPd00AphqJR/0LhANUS6/+7SCb98YOfA==}
     engines: {node: '>=10'}
+    dev: true
+
+  /yallist@2.1.2:
+    resolution: {integrity: sha512-ncTzHV7NvsQZkYe1DW7cbDLm0YpzHmZF5r/iyP3ZnQtMiJ+pjzisCiMNI+Sj+xQF5pXhSHxSB3uDbsBTzY/c2A==}
     dev: true
 
   /yallist@3.1.1:

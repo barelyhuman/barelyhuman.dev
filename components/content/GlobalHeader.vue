@@ -7,7 +7,9 @@
 			</small>
 		</div>
 		<nav class="text-zinc-400 flex items-center gap-4 justify-end w-1/2">
-			<a href="/tags" class="hover:text-zinc-700">Tags</a>
+			<a href="/feed.xml" class="hover:text-zinc-700">rss</a>
+			<a href="/tags" class="hover:text-zinc-700">tags</a>
+			<a target="_blank" rel="noreferrer" href="https://github.com/barelyhuman/barelyhuman.dev" class="hover:text-zinc-700">source</a>
 		</nav>
 	</header>
 </template>
