@@ -4,9 +4,9 @@ export default defineNuxtConfig({
   feed: {
     sources: [
       {
-        path: '/feed.xml', 
-        type: 'rss2', 
-        cacheTime: 60 * 15, 
+        path: '/feed.xml',
+        type: 'rss2',
+        cacheTime: 60 * 15,
       },
     ],
   },
