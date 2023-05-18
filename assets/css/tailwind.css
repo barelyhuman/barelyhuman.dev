@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-base: Iowan Old Style, Apple Garamond, Baskerville, Times New Roman,
+    Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji,
+    Segoe UI Emoji, Segoe UI Symbol;
+  --font-mono: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console,
+    monospace;
+}
+
+html {
+  --base: theme('colors.zinc.50');
+  --surface: theme('colors.zinc.100');
+  --overlay: theme('colors.zinc.200');
+  --muted: theme('colors.zinc.400');
+  --subtle: theme('colors.zinc.600');
+  --text: theme('colors.zinc.900');
+}
+
+html,
+body {
+  @apply bg-base text-text;
+}
+
+body {
+  @apply max-w-content mx-auto px-3 pt-5 tracking-wide;
+  font-family: var(--font-base);
+}
+
+header a {
+  @apply !no-underline;
+}
+
+.blog-post a {
+  @apply text-muted underline hover:text-text;
+}
+
+.blog-post p {
+  @apply mb-5;
+}
+
+.blog-post h1,
+.blog-post h2,
+.blog-post h3,
+.blog-post h4,
+.blog-post h5 {
+  @apply font-bold;
+}
+
+.blog-post code {
+  @apply bg-overlay rounded-md p-1 font-mono;
+}
+
+.blog-post pre {
+  @apply my-2 bg-surface leading-loose whitespace-pre-wrap px-4 p-3 rounded-md font-mono;
+}
+.blog-post pre > code {
+  @apply bg-inherit p-0;
+}
