@@ -17,4 +17,5 @@ restart:
 
 update: 
 	git pull --rebase
+	make build
 	make restart
