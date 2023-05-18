@@ -17,7 +17,7 @@ tags.value = allTags
   <h1>Tags</h1>
   <template v-for="tag in tags">
     <a
-      class="text-zinc-400 hover:text-zinc-800 last:truncate hover:after:text-zinc-400 [&:not(:last-child)]:after:mr-[1ch] [&:not(:last-child)]:after:content-[',']"
+      class="text-muted hover:text-text last:truncate hover:after:text-muted [&:not(:last-child)]:after:mr-[1ch] [&:not(:last-child)]:after:content-[',']"
       v-bind:href="tag.url"
       >{{ tag.label }}</a
     >
