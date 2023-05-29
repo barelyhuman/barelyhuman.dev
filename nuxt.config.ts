@@ -1,6 +1,11 @@
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
-  modules: ['@nuxt/content', '@nuxtjs/tailwindcss', 'nuxt-module-feed'],
+  modules: [
+    '@nuxt/content',
+    '@nuxtjs/tailwindcss',
+    'nuxt-module-feed',
+    '@nuxtjs/color-mode',
+  ],
   app: {
     pageTransition: { name: 'page', mode: 'out-in' },
   },
@@ -10,9 +15,9 @@ export default defineNuxtConfig({
     },
   },
   content: {
-    highlight:{
-      theme:"rose-pine-dawn",
-      preload:["js"]
+    highlight: {
+      theme: 'rose-pine-dawn',
+      preload: ['js'],
     },
   },
   feed: {

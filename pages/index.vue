@@ -1,6 +1,8 @@
 <script setup>
-const contentList = await queryContent().sort({date:-1}).find()
+  const contentList = await queryContent().sort({date:-1}).find()
 </script>
+
+
 <template>
   <GlobalHeader />
   <h1 class="mb-10">Writing</h1>
@@ -12,9 +14,9 @@ const contentList = await queryContent().sort({date:-1}).find()
       </header>
     </div>
     <a
-      :href="article._path"
       class="block text-subtle px-4 py-5 border-b cursor-pointer hover:bg-overlay"
       v-for="article in contentList"
+      :href="article._path"
       :key="article._path"
     >
       <div class="flex">

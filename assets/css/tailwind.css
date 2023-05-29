@@ -19,6 +19,24 @@ html {
   --text: theme('colors.zinc.900');
 }
 
+.light-mode {
+  --base: theme('colors.zinc.50');
+  --surface: theme('colors.zinc.100');
+  --overlay: theme('colors.zinc.200');
+  --muted: theme('colors.zinc.400');
+  --subtle: theme('colors.zinc.600');
+  --text: theme('colors.zinc.900');
+}
+
+.dark-mode {
+  --base: theme('colors.zinc.900');
+  --surface: theme('colors.zinc.800');
+  --overlay: theme('colors.zinc.700');
+  --muted: theme('colors.zinc.500');
+  --subtle: theme('colors.zinc.400');
+  --text: theme('colors.zinc.200');
+}
+
 html,
 body {
   @apply bg-base text-text;
