@@ -2,7 +2,7 @@
   <header class="flex mb-10 items-center justify-between">
     <div>
       <a href="/">
-        <h1>BarelyHuman</h1>
+        <h1 class="!m-0 !p-0">BarelyHuman</h1>
       </a>
       <small class="text-muted"> For developers </small>
     </div>

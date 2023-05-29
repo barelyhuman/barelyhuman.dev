@@ -39,7 +39,7 @@ html {
 
 html,
 body {
-  @apply bg-base text-text;
+  @apply bg-base text-text text-[1.02rem];
 }
 
 body {
@@ -56,23 +56,31 @@ header a {
 }
 
 .blog-post p {
-  @apply mb-5;
-}
+  @apply mb-5 leading-loose text-subtle;
+} 
 
 .blog-post h1,
 .blog-post h2,
 .blog-post h3,
 .blog-post h4,
 .blog-post h5 {
-  @apply font-bold;
+  @apply font-bold italic tracking-widest text-lg mt-20 mb-5;
+}
+
+.blog-post h1 > a,
+.blog-post h2 > a,
+.blog-post h3 > a,
+.blog-post h4 > a,
+.blog-post h5 > a{
+  @apply no-underline text-text;
 }
 
 .blog-post code {
-  @apply bg-overlay rounded-md p-1 font-mono;
+  @apply bg-overlay rounded-md px-2 text-sm font-mono;
 }
 
 .blog-post pre {
-  @apply my-2 bg-surface leading-loose whitespace-pre-wrap px-4 p-3 rounded-md font-mono;
+  @apply my-2 bg-surface leading-loose whitespace-pre-wrap px-4 p-3 text-base rounded-md font-mono;
 }
 .blog-post pre > code {
   @apply bg-inherit p-0;
@@ -84,4 +92,17 @@ header a {
 
 .blog-post section.footnotes {
   @apply border-t border-t-subtle py-4;
+}
+
+
+.blog-post ul ,.blog-post ol{
+  @apply pl-6 my-5 text-current;
+}
+
+.blog-post ul > li{
+  @apply list-disc leading-loose text-subtle;
+}
+
+.blog-post ol > li{
+  @apply list-decimal leading-loose text-subtle;
 }

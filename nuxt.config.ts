@@ -6,6 +6,13 @@ export default defineNuxtConfig({
     'nuxt-module-feed',
     '@nuxtjs/color-mode',
   ],
+  hooks: {
+    listen() {
+      if (process.send) {
+        process.send('ready')
+      }
+    },
+  },
   app: {
     pageTransition: { name: 'page', mode: 'out-in' },
   },
@@ -16,8 +23,10 @@ export default defineNuxtConfig({
   },
   content: {
     highlight: {
-      theme: 'rose-pine-dawn',
-      preload: ['js'],
+      theme: {
+        'default': 'rose-pine-dawn',
+        'dark-mode': 'rose-pine',
+      },
     },
   },
   feed: {
