@@ -59,3 +59,11 @@ header a {
 .blog-post pre > code {
   @apply bg-inherit p-0;
 }
+
+.blog-post blockquote {
+  @apply border-l-2 border-l-muted flex flex-col justify-center items-center bg-surface my-10 px-5 py-2 align-middle;
+}
+
+.blog-post section.footnotes {
+  @apply border-t border-t-subtle py-4;
+}
