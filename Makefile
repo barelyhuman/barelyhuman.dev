@@ -1,10 +1,11 @@
 APP_NAME=barelyhuman-dev
+PORT=3123
 
 build:
 	yarn; yarn build
 
 start:
-	pm2 start .output/server/index.mjs --name=${APP_NAME}
+	pm2 start 'PORT=${PORT} node .output/server/index.mjs' --name=${APP_NAME}
 
 kill:
 	pm2 del ${APP_NAME}

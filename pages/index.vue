@@ -1,5 +1,5 @@
 <script setup>
-import parse from 'date-fns/parse'
+import parse from 'date-fns/parse/index.js'
 let contentList = await queryContent().find()
 contentList = contentList.sort((x, y) => {
   const date = parse(x.date, 'dd/MM/yyyy', new Date())
