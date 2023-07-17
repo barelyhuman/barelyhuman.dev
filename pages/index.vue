@@ -1,7 +1,12 @@
 <script setup>
-  const contentList = await queryContent().sort({date:-1}).find()
+import parse from 'date-fns/parse'
+let contentList = await queryContent().find()
+contentList = contentList.sort((x, y) => {
+  const date = parse(x.date, 'dd/MM/yyyy', new Date())
+  const dateNext = parse(y.date, 'dd/MM/yyyy', new Date())
+  return  dateNext.getTime() - date.getTime()
+})
 </script>
-
 
 <template>
   <GlobalHeader />
