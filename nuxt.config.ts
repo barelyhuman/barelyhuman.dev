@@ -15,6 +15,15 @@ export default defineNuxtConfig({
   },
   app: {
     pageTransition: { name: 'page', mode: 'out-in' },
+
+    head: {
+      link: [
+        {
+          rel: 'shortcut icon',
+          href: 'data:,',
+        },
+      ],
+    },
   },
   routeRules: {
     '*': {
