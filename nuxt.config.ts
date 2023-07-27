@@ -5,6 +5,7 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     'nuxt-module-feed',
     '@nuxtjs/color-mode',
+    '@nuxthq/studio',
   ],
   hooks: {
     listen() {
