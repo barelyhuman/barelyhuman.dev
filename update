@@ -1,0 +1,13 @@
+#!/bin/bash
+
+. ~/.nvm/nvm.sh
+nvm install
+nvm use
+yarn
+yarn build
+
+if [ "$1" == "restart" ]; then
+  make kill
+fi
+
+make start

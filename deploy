@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+DEPLOY_HOST="root@barelyhuman.xyz"
+APP_DIR="/apps/barelyhuman.dev"
+
+COMMANDS="""
+cd ${APP_DIR}
+./update
+"""
+
+rsync -aP --exclude=".git" --exclude="node_modules" --exclude=".nuxt" --exclude=".env" ./ "${DEPLOY_HOST}:${APP_DIR}"
+
+ssh "${DEPLOY_HOST}" "/bin/bash -c '$COMMANDS'"
