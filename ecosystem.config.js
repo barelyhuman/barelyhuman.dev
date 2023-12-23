@@ -17,10 +17,7 @@ module.exports = {
       ref:"origin/main",
       "repo":"git@github.com:barelyhuman/barelyhuman.dev.git",
       path:"/apps/barelyhuman.dev",
-      "post-deploy":`source ~/.profile && \ 
-      nvm use && \
-      yarn install &&  \
-      yarn build`
+      "post-deploy":"source ~/.profile;nvm use;yarn install;yarn build"
   }
 }
 }
