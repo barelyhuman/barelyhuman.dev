@@ -21,6 +21,7 @@
   },
   "dependencies": {
     "date-fns": "^2.30.0",
+    "jsdom": "^23.0.1",
     "luxon": "^3.3.0"
   }
 }
