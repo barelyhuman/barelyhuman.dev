@@ -10,4 +10,14 @@ module.exports = {
       listen_timeout: 5000,
     },
   ],
+  deploy:{
+    production : {
+      "user" : "root",
+      "host" : ["barelyhuman.dev"],
+      ref:"origin/main",
+      "repo":"git@github.com:barelyhuman/barelyhuman.dev.git",
+      path:"/apps/barelyhuman.dev",
+      "post-deploy":"nvm use; yarn; yarn build;"
+  }
+}
 }
