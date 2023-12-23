@@ -35,7 +35,7 @@ useHead({
     },
     {
       property: 'og:image',
-      content: `https://og.barelyhuman.xyz/generate?fontSize=14&title=${_content.title}&subtitle=barelyhuman.dev&fontSizeTwo=8&color=%2323283d`,
+      content: `https://og.barelyhuman.xyz/generate?backgroundColor=181819fontSize=14&title=${_content.title}&fontSizeTwo=8&color=efefef`,
     },
   ],
 })
