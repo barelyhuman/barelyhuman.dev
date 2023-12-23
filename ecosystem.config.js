@@ -2,7 +2,7 @@ module.exports = {
   apps: [
     {
       name: 'barelyhuman-dev',
-      script: './node_modules/.bin/nuxt',
+      script: 'PORT=3123 ./node_modules/.bin/nuxt',
       args: 'start',
       instances: 1,
       exec_mode: 'cluster',
