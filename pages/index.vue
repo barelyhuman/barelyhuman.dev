@@ -1,5 +1,5 @@
 <script setup>
-import parse from 'date-fns/parse/index.js'
+import parse from 'date-fns/parse'
 let contentList = await queryContent().find()
 
 const knowledgeBookList =

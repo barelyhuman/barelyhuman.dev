@@ -29,7 +29,12 @@ export default defineNuxtConfig({
   routeRules: {
     '*': {
       ssr: true,
+      prerender: false,
     },
+    "/api/konduktum":{
+      ssr: true,
+      prerender: false,
+    }
   },
   content: {
     highlight: {
