@@ -38,7 +38,14 @@ useHead({
       content: `https://og.barelyhuman.xyz/generate?backgroundColor=181819fontSize=14&title=${_content.title}&fontSizeTwo=8&color=efefef`,
     },
   ],
+  link:[
+    {
+      rel:"canonical",
+      href:_content.canonicalURL
+    }
+  ]
 })
+
 
 </script>
 <template>
