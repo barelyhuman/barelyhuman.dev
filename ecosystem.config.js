@@ -2,7 +2,7 @@ module.exports = {
   apps: [
     {
       name: 'barelyhuman-dev',
-      script: 'PORT=3123 ./node_modules/.bin/nuxt',
+      script: 'PORT=3123 node .output/server/index.mjs',
       args: 'start',
       instances: 1,
       exec_mode: 'cluster',
@@ -17,7 +17,7 @@ module.exports = {
       ref:"origin/main",
       "repo":"git@github.com:barelyhuman/barelyhuman.dev.git",
       path:"/apps/barelyhuman.dev",
-      "post-deploy":"source ~/.profile;nvm use;yarn install;yarn build"
+      "post-deploy":"source ~/.nvm/nvm.sh; nvm use; yarn; yarn build; pm2 startOrRestart ecosystem.config.js --env production"
   }
 }
 }
