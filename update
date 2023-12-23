@@ -6,8 +6,10 @@ nvm use
 yarn
 yarn build
 
+# Force a restart
 if [ "$1" == "restart" ]; then
   make kill
+  make start
 fi
 
-make start
+make restart

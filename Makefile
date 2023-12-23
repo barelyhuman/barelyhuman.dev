@@ -8,7 +8,7 @@ logs:
 	pm2 logs ${APP_NAME}
 
 start:
-	pm2 startOrRestart 'PORT=${PORT} node .output/server/index.mjs' --name=${APP_NAME}
+	pm2 start 'PORT=${PORT} node ./.output/server/index.mjs' --name=${APP_NAME}
 
 kill:
 	pm2 del ${APP_NAME}
