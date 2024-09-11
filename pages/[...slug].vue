@@ -5,10 +5,11 @@ const route = useRoute()
 
 const fileSlug = route.params?.slug?.length ? route.params?.slug[0] : ''
 const slugSplits = route.fullPath.split("?")
+
 let externalSource = false;
 let _content
 if (slugSplits.length === 1) {
-  _content = await queryContent(fileSlug).findOne()
+  _content = await queryContent(slugSplits[0]).findOne()
 } else {
   externalSource = true
   const search = new URLSearchParams(slugSplits[1])
@@ -38,10 +39,10 @@ useHead({
       content: `https://og.barelyhuman.xyz/generate?backgroundColor=181819fontSize=14&title=${_content.title}&fontSizeTwo=8&color=efefef`,
     },
   ],
-  link:[
+  link: [
     {
-      rel:"canonical",
-      href:_content.canonicalURL
+      rel: "canonical",
+      href: _content.canonicalURL
     }
   ]
 })
