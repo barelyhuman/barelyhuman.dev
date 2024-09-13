@@ -8,6 +8,7 @@ cd ${APP_DIR}
 ./update
 """
 
-rsync -aP --exclude=".git" --exclude="node_modules" --exclude=".nuxt" --exclude=".output" --exclude=".env" ./ "${DEPLOY_HOST}:${APP_DIR}"
+yarn build
+rsync -aP --exclude=".git" --exclude="node_modules" --exclude=".env" ./ "${DEPLOY_HOST}:${APP_DIR}"
 
 ssh "${DEPLOY_HOST}" "/bin/bash -c '$COMMANDS'"

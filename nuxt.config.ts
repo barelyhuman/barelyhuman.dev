@@ -28,11 +28,8 @@ export default defineNuxtConfig({
   },
   routeRules: {
     '*': {
-      swr: true,
+      swr: 60 * 5,
       prerender: true,
-    },
-    '/*': {
-      swr: true,
     },
     '/api/konduktum': {
       ssr: true,

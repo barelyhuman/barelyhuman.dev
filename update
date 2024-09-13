@@ -4,7 +4,6 @@
 nvm install
 nvm use
 yarn
-yarn build
 
 # Force a restart
 if [ "$1" == "restart" ]; then
