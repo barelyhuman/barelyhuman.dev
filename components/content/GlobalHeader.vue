@@ -8,6 +8,7 @@
     </div>
     <nav class="text-muted flex items-center gap-4 justify-end w-1/2">
       <a href="/feed.xml" class="hover:text-text">rss</a>
+      <a href="/#writing" class="hover:text-text">writing</a>
       <a href="/tags" class="hover:text-text">tags</a>
       <a
         target="_blank"
