@@ -6,6 +6,7 @@ export default defineNuxtConfig({
     'nuxt-module-feed',
     '@nuxtjs/color-mode',
     '@nuxthq/studio',
+    '@nuxt/image'
   ],
   hooks: {
     listen() {
